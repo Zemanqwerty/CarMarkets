@@ -1,0 +1,12 @@
+FROM python:3.9
+
+# Install dependencies:
+COPY FirmsMarketsCars/requirements.txt .
+RUN pip install -r requirements.txt
+
+EXPOSE 8000:8000
+
+COPY FirmsMarketsCars .
+
+# Run the application:
+CMD python run.py

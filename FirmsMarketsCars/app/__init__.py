@@ -1,0 +1,11 @@
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+
+
+app = Flask(__name__)
+app.config.from_object('config')
+db = SQLAlchemy(app)
+
+from app import db_models
+from app.views import firmas_views, automarket_views, cars_views
