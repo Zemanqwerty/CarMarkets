@@ -5,6 +5,7 @@ Second service PORT: 8000 (8080 in docker)
 
 URLs:
   first service:
+    
     /users/all (get all users. Method - GET)
     /users/create (create new user. Method - POST)
     /users/1/update (update user with ID "1". Method - PUT)
@@ -16,6 +17,7 @@ URLs:
     /cars/delete/1 (delete car with ID "1". Method - DELETE)
     
   second service:
+    
     /firma/all (get all firms. Method - GET)
     /firma/create (create new firm. Method - POST)
     /firma/1/update (update firma with ID "1". Method - PUT)
